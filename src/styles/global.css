@@ -1,0 +1,108 @@
+@tailwind base;
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply border-b-2 border-blue-700;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: local('JosefinSans'),
+    url('../assets/fonts/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: local('JosefinSans'),
+    url('../assets/fonts/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: local('JosefinSans'),
+    url('../assets/fonts/JosefinSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: local('JosefinSans'),
+    url('../assets/fonts/JosefinSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: local('Cabin'),
+    url('../assets/fonts/Cabin-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: local('Cabin'),
+    url('../assets/fonts/Cabin-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: local('Cabin'),
+  url('../assets/fonts/Cabin-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: local('Cabin'),
+    url('../assets/fonts/Cabin-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+@layer base {
+  svg { 
+      display: inline;
+      vertical-align: baseline; 
+  }
+}
+
+.custom-thumbnail .ant-upload-list-item-container{
+  width : 100% !important;
+  height : 100% !important;
+}
+.custom-thumbnail .ant-upload-select {
+  margin-left: 25% !important;
+  margin-top: -6rem !important;
+  width: 12rem !important;
+  height: 2.5rem !important;
+  background: white !important;
+  border: 1px solid #CCCCCC !important;
+}
+.custom-edit-menu .ant-menu-item-active, .custom-edit-menu .ant-menu-item-selected  {
+  background: white !important;
+  color: #008F79 !important;
+  border-radius: 0 !important;
+  border-left: 1px solid #008F79 !important;
+}
+
+.ant-layout, .ant-col , .ant-btn, .ant-menu-title-content{
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+}

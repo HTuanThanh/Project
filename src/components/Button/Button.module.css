@@ -1,0 +1,5 @@
+.root {
+  @apply px-4 py-1 rounded-lg min-w-[80px];
+  @apply text-base text-white;
+  @apply bg-emerald-400;
+}
